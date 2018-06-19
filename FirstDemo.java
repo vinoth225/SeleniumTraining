@@ -1,0 +1,25 @@
+package Selenium.BasicProject;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FirstDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\chromedriver\\chromedriver.exe");
+		 ChromeDriver cd= new ChromeDriver(); 
+		
+		 cd.manage().window().maximize();
+		 cd.navigate().to("https://www.csscorp.com/");
+		 cd.getTitle();
+		 cd.getTitle().length();
+		 System.out.println("Page Title =" + cd.getTitle() + "\n Title Length=" + cd.getTitle().length());
+		 //cd.getPageSource();
+		 cd.equals(cd.getTitle());
+		 cd.getPageSource().length();                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+		 System.out.println("Page Source Length=" + cd.getPageSource().length());
+		  	 
+		
+	}
+
+}
